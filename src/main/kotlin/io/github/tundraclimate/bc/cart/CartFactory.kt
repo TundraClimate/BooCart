@@ -11,5 +11,6 @@ class CartFactory {
     fun spawn(world: World, loc: Location, owner: Player) {
         val cart = world.spawnEntity(loc, EntityType.PIG)
         cart.setMetadata("BooCart:cart", FixedMetadataValue(BooCart.plugin, true))
+        cart.setMetadata("BooCart:owner", FixedMetadataValue(BooCart.plugin, owner))
     }
 }
