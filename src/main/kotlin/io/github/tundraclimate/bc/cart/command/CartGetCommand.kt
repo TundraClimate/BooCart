@@ -1,6 +1,6 @@
 package io.github.tundraclimate.bc.cart.command
 
-import BooCart
+import io.github.tundraclimate.bc.BooCart
 import io.github.tundraclimate.bc.cart.CartSpawnEgg
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
