@@ -1,9 +1,12 @@
 package io.github.tundraclimate.bc.cart
 
 import io.github.tundraclimate.bc.BooCart
+import io.github.tundraclimate.bc.config.NamespaceKeys
 import org.bukkit.Effect
+import org.bukkit.NamespacedKey
 import org.bukkit.World
 import org.bukkit.entity.Entity
+import org.bukkit.persistence.PersistentDataType
 import org.bukkit.scheduler.BukkitRunnable
 
 class CartEffect {
@@ -22,7 +25,7 @@ class CartEffect {
     }
 
     private fun popEffect(world: World, entity: Entity) {
-        if (entity.hasMetadata("BooCart:cart")) {
+        if (entity.persistentDataContainer.has(NamespacedKey(BooCart.plugin, NamespaceKeys.IS_CART), PersistentDataType.BYTE)) {
             world.playEffect(entity.location, Effect.SMOKE, 1, 1)
         }
     }

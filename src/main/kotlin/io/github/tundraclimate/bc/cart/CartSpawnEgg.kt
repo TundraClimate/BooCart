@@ -1,6 +1,7 @@
 package io.github.tundraclimate.bc.cart
 
 import io.github.tundraclimate.bc.BooCart
+import io.github.tundraclimate.bc.config.NamespaceKeys
 import org.bukkit.Material
 import org.bukkit.NamespacedKey
 import org.bukkit.enchantments.Enchantment
@@ -15,7 +16,7 @@ object CartSpawnEgg {
         val eggMeta = egg.itemMeta?.also {
             it.setDisplayName("BooCart")
             it.addItemFlags(ItemFlag.HIDE_ENCHANTS)
-            it.persistentDataContainer.set(NamespacedKey(BooCart.plugin, "spawn_egg"), PersistentDataType.BYTE, 0)
+            it.persistentDataContainer.set(NamespacedKey(BooCart.plugin, NamespaceKeys.EGG), PersistentDataType.BYTE, 0)
         }
         egg.itemMeta = eggMeta
         return egg

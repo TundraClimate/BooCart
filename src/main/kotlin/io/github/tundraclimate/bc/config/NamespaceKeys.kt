@@ -1,4 +1,7 @@
 package io.github.tundraclimate.bc.config
 
-enum class NamespacedKeys {
+object NamespaceKeys {
+    const val IS_CART = "cart"
+    const val OWNER = "owner"
+    const val  EGG = "spawn_egg"
 }
