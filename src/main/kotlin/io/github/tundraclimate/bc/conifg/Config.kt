@@ -1,4 +1,4 @@
-package io.github.tundraclimate.bc
+package io.github.tundraclimate.bc.conifg
 
 class Config {
     var speed: Double = 3.0

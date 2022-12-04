@@ -1,4 +1,4 @@
-import io.github.tundraclimate.bc.Config
+import io.github.tundraclimate.bc.conifg.Config
 import org.bukkit.plugin.java.JavaPlugin
 
 class BooCart: JavaPlugin() {
