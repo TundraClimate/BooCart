@@ -1,4 +1,5 @@
 import io.github.tundraclimate.bc.conifg.Config
+import io.github.tundraclimate.bc.cart.CartExchanger
 import org.bukkit.plugin.java.JavaPlugin
 
 class BooCart: JavaPlugin() {
@@ -11,5 +12,6 @@ class BooCart: JavaPlugin() {
 
     override fun onEnable() {
         plu = this
+        CartExchanger()
     }
 }
