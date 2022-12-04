@@ -2,6 +2,7 @@ package io.github.tundraclimate.bc
 
 import io.github.tundraclimate.bc.config.Config
 import io.github.tundraclimate.bc.cart.CartExchanger
+import io.github.tundraclimate.bc.cart.command.CartGetCommand
 import org.bukkit.plugin.java.JavaPlugin
 
 class BooCart: JavaPlugin() {
@@ -15,5 +16,6 @@ class BooCart: JavaPlugin() {
     override fun onEnable() {
         plu = this
         CartExchanger()
+        CartGetCommand()
     }
 }
