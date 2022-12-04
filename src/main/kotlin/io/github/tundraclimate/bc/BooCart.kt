@@ -1,5 +1,6 @@
 package io.github.tundraclimate.bc
 
+import io.github.tundraclimate.bc.cart.CartEffect
 import io.github.tundraclimate.bc.config.Config
 import io.github.tundraclimate.bc.cart.CartExchanger
 import io.github.tundraclimate.bc.cart.command.CartGetCommand
@@ -17,5 +18,6 @@ class BooCart: JavaPlugin() {
         plu = this
         CartExchanger()
         CartGetCommand()
+        CartEffect()
     }
 }
