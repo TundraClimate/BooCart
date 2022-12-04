@@ -1,6 +1,6 @@
 package io.github.tundraclimate.bc.cart
 
-import BooCart
+import io.github.tundraclimate.bc.BooCart
 import org.bukkit.NamespacedKey
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener

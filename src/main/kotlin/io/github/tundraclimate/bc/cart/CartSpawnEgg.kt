@@ -1,6 +1,6 @@
 package io.github.tundraclimate.bc.cart
 
-import BooCart
+import io.github.tundraclimate.bc.BooCart
 import org.bukkit.Material
 import org.bukkit.NamespacedKey
 import org.bukkit.enchantments.Enchantment

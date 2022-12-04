@@ -1,4 +1,6 @@
-import io.github.tundraclimate.bc.conifg.Config
+package io.github.tundraclimate.bc
+
+import io.github.tundraclimate.bc.config.Config
 import io.github.tundraclimate.bc.cart.CartExchanger
 import org.bukkit.plugin.java.JavaPlugin
 

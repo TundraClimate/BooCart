@@ -1,6 +1,6 @@
 package io.github.tundraclimate.bc.cart
 
-import BooCart
+import io.github.tundraclimate.bc.BooCart
 import org.bukkit.Location
 import org.bukkit.World
 import org.bukkit.entity.EntityType
