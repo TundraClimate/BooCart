@@ -11,12 +11,13 @@ import org.bukkit.persistence.PersistentDataType
 
 object CartHandle {
     fun getHandle(amount: Int = 1): ItemStack {
-        val handle = ItemStack(Material.CARROT, amount)
+        val handle = ItemStack(Material.CARROT_ON_A_STICK, amount)
         handle.addUnsafeEnchantment(Enchantment.DEPTH_STRIDER, 1)
         val handleMeta = handle.itemMeta?.also {
             it.setDisplayName("CartHandle")
             it.addItemFlags(ItemFlag.HIDE_ENCHANTS)
             it.persistentDataContainer.set(NamespacedKey(BooCart.plugin, NamespaceKeys.HANDLE), PersistentDataType.BYTE, 0)
+            it.isUnbreakable = true
         }
         handle.itemMeta = handleMeta
         return handle

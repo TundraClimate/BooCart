@@ -24,5 +24,5 @@ object HandleMap {
         }
     }
 
-    fun getSpeed(uuid: UUID) = map[uuid]!!
+    fun getSpeed(uuid: UUID) = map[uuid] ?: 0.0
 }
