@@ -5,6 +5,7 @@ import io.github.tundraclimate.bc.config.Config
 import io.github.tundraclimate.bc.cart.CartExchanger
 import io.github.tundraclimate.bc.cart.CartHandleApply
 import io.github.tundraclimate.bc.cart.command.CartGetCommand
+import io.github.tundraclimate.bc.cart.command.HandleGetCommand
 import io.github.tundraclimate.bc.cart.control.HandleInteraction
 import io.github.tundraclimate.bc.cart.control.HandleMap
 import org.bukkit.event.EventHandler
@@ -25,6 +26,7 @@ class BooCart: JavaPlugin(), Listener {
         server.pluginManager.registerEvents(this, this)
         CartExchanger()
         CartGetCommand()
+        HandleGetCommand()
         CartEffect()
         CartHandleApply()
         HandleInteraction()
