@@ -28,6 +28,7 @@ class CartHandleApply {
                     ?: return
             val (uuid, _) = own.split(":")
             entity.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED)?.baseValue = HandleMap.getSpeed(UUID.fromString(uuid))
+            HandleMap.speedDown(UUID.fromString(uuid))
         }
     }
 
