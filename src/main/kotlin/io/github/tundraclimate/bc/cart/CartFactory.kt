@@ -20,6 +20,5 @@ object CartFactory {
             it.set(NamespacedKey(BooCart.plugin, NamespaceKeys.OWNER), PersistentDataType.STRING, own)
         }
         (cart as Pig).setSaddle(true);
-        HandleMap.init(owner.uniqueId)
     }
 }
