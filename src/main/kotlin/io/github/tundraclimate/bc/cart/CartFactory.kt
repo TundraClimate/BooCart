@@ -1,6 +1,7 @@
 package io.github.tundraclimate.bc.cart
 
 import io.github.tundraclimate.bc.BooCart
+import io.github.tundraclimate.bc.cart.control.HandleMap
 import io.github.tundraclimate.bc.config.NamespaceKeys
 import org.bukkit.Location
 import org.bukkit.NamespacedKey
@@ -19,5 +20,6 @@ object CartFactory {
             it.set(NamespacedKey(BooCart.plugin, NamespaceKeys.OWNER), PersistentDataType.STRING, own)
         }
         (cart as Pig).setSaddle(true);
+        HandleMap.init(owner.uniqueId)
     }
 }
